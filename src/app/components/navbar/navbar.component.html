@@ -57,7 +57,7 @@
 
           <li class="nav-item">
 
-            <a class="nav-link" href="#">Perfil</a>
+            <a class="nav-link" [routerLink]="['/news']"> News </a>
 
             <div class="navbar__tnav"></div>
 
@@ -69,9 +69,9 @@
 
           <button class="navbar__profile">
 
-            <div class="navbar__profile-radius">.</div>
+            <div class="navbar__profile-radius">l</div>
             
-            <div class="navbar__profile-title">Perfil</div> 
+            <div class="navbar__profile-title">{{ nameUser }}</div> 
 
             <img src="../../../assets/img/users.png" class="navbar__profile-img">
 

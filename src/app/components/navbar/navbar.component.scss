@@ -7,6 +7,8 @@ div.container-fluid{
     background-image: linear-gradient(to right, #313131, #636363);
 
     border: 1px solid #313131;
+    // -webkit-box-shadow: 0 5px 20px 10px #1cb3c8;
+    // box-shadow: 0 5px 20px 10px #1cb3c8;
 }
 
 a.navbar-brand.navbar__logo{
@@ -24,6 +26,7 @@ a.navbar-brand.navbar__logo:hover{
     top: 97%;
     left: 0;
     width: 100%;
+    
 }
 
 .bottom-triangle {
@@ -31,6 +34,7 @@ a.navbar-brand.navbar__logo:hover{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 25%, 0 100%);
     height: 20px;
     background-image: linear-gradient(to right, #313131, #636363);
+    
 }
 
 li.nav-item{
@@ -68,12 +72,16 @@ li.nav-item>a.nav-link{
 }
 
 .navbar__profile-radius{
-    display: inline-block;
-    background-color: #1cb3c8;
-    color: #1cb3c8;
-    clip-path: circle(50% at 100% 50%);
     height: 100%;
     width: 5px;
+    
+    display: inline-block;
+
+    background-color: #1cb3c8;
+    color: #1cb3c8;
+    
+    clip-path: polygon(100% 0, 0 0, 100% 115%);
+
     padding: 5px 20px;
     margin-right: -5px
 }
@@ -82,13 +90,14 @@ li.nav-item>a.nav-link{
     display: inline-block;
     background-color: #1cb3c8;
     height: 100%;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px 5px 10px;
 }
 
 .navbar__profile-img{
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     margin-left: -10px;
+    border: 5px solid #1cb3c8;
     border-radius: 50% !important;
 }
 
