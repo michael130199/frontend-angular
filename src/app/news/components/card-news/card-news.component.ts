@@ -8,23 +8,20 @@ import { Component, Input } from '@angular/core';
   templateUrl: './card-news.component.html',
   styleUrls: ['./card-news.component.scss']
 })
+
 export class CardNewsComponent  {  
 
-  @Input() public day:number;
-  @Input() public month:number;
-  @Input() public year:number;
+  @Input() day:number;
+  @Input() month:number;
+  @Input() year:number;
   
-  @Input() public title:string;
-  @Input() public descrip:string;
-  @Input() public author:string;
-  @Input() public tag:string;
+  @Input() title:string;
+  @Input() descrip:string;
+  @Input() author:string;
+  @Input() tag:string;
   
-  @Input() public content:any;
+  content:any;
   
-
   constructor( ) { }
-
-
-  
 
 }

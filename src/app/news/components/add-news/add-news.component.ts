@@ -11,6 +11,8 @@ import { Component, EventEmitter, Output, OnChanges, DoCheck} from '@angular/cor
 
 export class AddNewsComponent{
 
+  public titleCom:string="Agregar Noticias";
+
 
   public newsDay:number;
   public newsMonth:number;

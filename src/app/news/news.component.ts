@@ -9,6 +9,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.scss']
 })
+
 export class NewsComponent implements OnInit {
 
   public title:string="Modulo De Noticias";
@@ -21,5 +22,6 @@ export class NewsComponent implements OnInit {
   ngOnInit() {
     
   }
+
 
 }
