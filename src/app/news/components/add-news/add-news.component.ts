@@ -1,4 +1,6 @@
-import { Component/*, OnInit */} from '@angular/core';
+import { Component, EventEmitter, Output, OnChanges, DoCheck} from '@angular/core';
+
+// import { CardNewsComponent } from '../card-news/card-news.component';
 
 
 @Component({
@@ -6,20 +8,22 @@ import { Component/*, OnInit */} from '@angular/core';
   templateUrl: './add-news.component.html',
   styleUrls: ['./add-news.component.scss']
 })
-export class AddNewsComponent  {
 
+export class AddNewsComponent{
+
+
+  public newsDay:number;
+  public newsMonth:number;
+  public newsYear:number;
+  
   public newsTitle:string;
-  public newsAuthor:string;
   public newsDescrip:string;
-
+  public newsAuthor:string;
+  public newsTag:string;
 
   constructor() { 
     
   }
 
-
-  mostrarNombre(){
-    console.log(this.newsTitle);
-  }
 
 }

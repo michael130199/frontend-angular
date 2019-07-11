@@ -5,17 +5,23 @@ import { FormsModule } from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router';
 import { NewsComponent } from './news.component';
-import { AddNewsComponent } from './components/add-news/add-news.component'
+import { AddNewsComponent } from './components/add-news/add-news.component';
+import { CardNewsComponent } from './components/card-news/card-news.component'
 
 const routes: Routes = [
   {
     path: '',
-    component: NewsComponent
+    component: NewsComponent,
+    children: [//admin-panel/lo que sea
+      {path: 'agregar', component: AddNewsComponent}
+      
+  ]
+
   }
 ];
 
 @NgModule({
-  declarations: [NewsComponent, AddNewsComponent],
+  declarations: [NewsComponent, AddNewsComponent, CardNewsComponent],
   exports: [RouterModule],
   imports: [
     CommonModule,
