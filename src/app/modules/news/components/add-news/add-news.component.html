@@ -1,0 +1,173 @@
+
+
+<div class="row">
+
+  <div class="col-7 ">
+    
+    <h4 class="mb-3">{{ titleCom }}</h4>
+    
+    
+      
+      <div class="row">
+        
+        <div class="col-6 my-2">
+          
+          <label for="title">Título</label>
+          
+          <input type="text" class="form-control" id="title" [(ngModel)]="newsTitle">
+        
+        </div>
+        
+        <div class="col-6 my-2">
+          
+          <label for="author">Autor</label>
+          
+          <input type="text" class="form-control" id="author" [(ngModel)]="newsAuthor">
+
+        </div>
+
+        <div class="col-12 my-2">
+          
+          <label for="descrip">Descripción</label>
+          
+          <input type="text" class="form-control" id="descrip" [(ngModel)]="newsDescrip">
+
+        </div>
+
+        <div class="col-12 my-2">
+          
+          <label for="fech">Fecha</label>
+          
+          <input type="date" class="form-control" id="fech" [(ngModel)]="newsFech" (ngModelChange)="newsFech">
+          
+          <hr>
+
+        </div>
+
+        <div class="col-6 my-2">
+
+          <h5 class="mb-1">Tipo de Noticia</h5>
+
+          <div class="d-block my-3">
+
+            <div class="custom-control custom-radio">
+
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked>
+
+              <label class="custom-control-label" for="credit">Larga</label>
+
+            </div>
+
+            <div class="custom-control custom-radio">
+
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input">
+              
+              <label class="custom-control-label" for="debit">Corta</label>
+            
+            </div>
+          
+          </div>
+        
+        </div>
+        
+        <div class="col-6 my-2">
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Shipping billing address</label>
+            </div>
+            
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Save this informatio</label>
+            </div>
+        </div>
+
+
+        <div class="col-6 my-2">
+
+          <label for="status">Estado</label>
+
+          <select class="custom-select d-block w-100" id="status" required [(ngModel)]="newsStatus">
+
+            <option selected="selected" disabled>Estado...</option>
+
+            <option value="Publicar">Publicar</option>
+            
+            <option value="Borrador">Borrador</option>
+          
+          </select>
+        
+        </div>
+
+        <div class="col-6 my-2">
+
+          <label for="tag">Etiqueta</label>
+
+          <select class="custom-select d-block w-100" id="tag" required [(ngModel)]="newsTag" >
+
+            <option selected="selected" disabled>Etiqueta...</option>
+
+            <option value="Institucional">Institucional</option>
+            
+            <option value="Nacional">Nacional</option>
+          
+          </select>
+        
+        </div>
+
+        
+        <div class="col-12 my-2"> 
+          <hr class="my-2">
+          <button class="btn btn-primary btn-lg btn-block">Enviar Noticia</button>
+        </div>
+        
+      
+      </div>
+
+      
+
+<!-- <form name="news">
+    </form> -->
+
+    <!-- Datos{
+          [title]="newsTitle"
+          [descrip]="newsDescrip"
+          [author]="newsAuthor"
+          [day]="newsDay"
+          [month]="newsMonth"
+          [year]="newsYear"
+          [tag]="newsTag"
+        } -->
+    
+  </div>
+
+  <div class="col-5 row">
+    <app-card-news
+
+      [title]="newsTitle"
+      [descrip]="newsDescrip"
+      [author]="newsAuthor"
+      [tag]="newsTag"
+      [day]="newsDay"
+      [month]="newsMonth"
+      [year]="newsYear"
+
+      class="col-12"
+      >
+
+    </app-card-news>
+    
+  </div>
+
+  <div class="col-6 my-2" >
+      <editor apiKey="erwndg98np9anyv7obcfitw84zf51ssy572dyte85tzaoz49" [init]="{plugins: 'link'}" 
+      [(ngModel)]="newsContent" id="editorTiny"> 
+      </editor>
+  </div>
+
+  <app-content-news
+  [content]="newsContent">
+
+  </app-content-news>
+</div>
+

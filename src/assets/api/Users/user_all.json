@@ -1,0 +1,43 @@
+[{
+    "id": 1,
+    "rol": { 
+        "id": 1,
+        "name": "admin",
+        "descrip": "tiene todas las opciones Habilitadas",
+        "Created_at": "2019-07-08 13:00:59",
+        "Updated_at": "2019-07-08 13:00:59"
+    },
+    "name": "Michael",
+    "last_name": "Urbina",
+    "ci": 27427601,
+    "tlf_emer": "04264186858",
+    "extention": "7079",
+    "email": "root@meunet.gob.ve",
+    "biography": "Algo que Decir",
+    "remember_token": "123456",
+    "password": "123456",
+    "Created_at": "2019-07-08",
+    "Update_at": "2019-07-08"
+},{
+    "id": 2,
+    "rol": { 
+        "id": 2,
+        "name": "user",
+        "descrip": "Solo pobra ver noticias, ver eventos, crear eventos que no esten vinculados a una noticia, entrar en los servicios, usar el chat, acceso a sus contactos, y modificar su perfil",
+        "Created_at": "2019-07-08 13:00:59",
+        "Updated_at": "2019-07-08 13:00:59"
+    },
+    "name": "Diego",
+    "last_name": "Rojas",
+    "ci": 27272727,
+    "tlf_emer": "04160000000",
+    "extention": "7080",
+    "email": "diegoRojas@gmail.com",
+    "biography": "Algo que Decir",
+    "remember_token": "123456",
+    "password": "123456",
+    "Created_at": "2019-07-08 13:00:59",
+    "Update_at": "2019-07-08 13:00:59"
+
+}
+ ]

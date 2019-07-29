@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* cambie card por chip */
+
+/* 
+.row {
+  max-width: 900px;
+  margin: 50px auto 0;
+} */
+
+.chip {
+  float: left;
+  padding: 0 1.7rem;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+    .chip>.wrapper>.menu-content { 
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .menu-content>li {
+        display: inline-block;
+    }
+
+    .menu-content>a {
+        color: #fff;
+    }
+
+    .menu-content>span {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        font-size: 10px;
+        font-weight: 700;
+        font-family: 'Open Sans';
+        transform: translate(-50%, 0);
+    }
+
+
+
+.wrapper {
+    
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(#000, 0.3), 0 15px 12px rgba(#000, 0.2);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.data {
+    bottom: 0;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.data>.content {
+    padding: 1em;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.author {
+    font-size: 12px;
+}
+
+.title {
+    margin-top: 10px;
+    font-family: 'Open Sans';
+
+    a{
+        color: #1cb3c8 ;
+    }
+}
+
+
+
+
+.title>a:hover{
+    text-decoration: none;
+    color: #0980a5;
+}
+
+a.link{
+    float: right;
+    color: #1cb3c8;
+}
+
+.link:hover{
+    color: #0980a5;
+}
+
+.text {
+    margin: 10px 5px;
+    text-align: justify;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox']:checked +  .menu-content {
+    transform: translateX(0%);
+    z-index: -10;
+}
+
+.wrapper {
+   background: url("./../../../assets/img/card.jpg") 100% 100% / cover no-repeat;
+}
+
+.wrapper>.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1cb3c8;
+    color: #fff;
+    padding: 0.8em;
+
+    .month,
+    .year {
+        font-size: 12px;
+    }
+
+    .day {
+        font-weight: 700;
+        font-size: 24px;
+        text-shadow: 2px 3px 2px rgba(#000, 0.18);
+    }
+    .month {
+        text-transform: uppercase;
+    }
+    
+    span {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+    
+    
+
+.wrapper>.tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff3434;
+    color: #fff;
+    padding: 0.8em;
+}
+
+.wrapper>.tag>span {
+    display: block;
+    text-align: center;
+}
+
+.data>.content {
+    background-color: #fff;
+    box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
+    border-radius: 0px 0px 5px 5px;
+}

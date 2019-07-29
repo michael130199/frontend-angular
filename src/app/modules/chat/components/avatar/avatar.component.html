@@ -1,0 +1,7 @@
+<div [ngClass]="className" class="avatar-container">
+  <ng-container *ngIf="!imageLoaded">{{ initials }}</ng-container>
+  <ng-container *ngIf="imageLoaded"> <img src="{{ src }}" /> </ng-container>
+  <ng-container *ngIf="isOnline">
+    <div class="avatar__status status--online"></div>
+  </ng-container>
+</div>

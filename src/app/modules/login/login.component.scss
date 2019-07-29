@@ -1,0 +1,72 @@
+.login__background{
+    background-image: linear-gradient(to right, #313131, #636363);
+    height: 100vh;
+    width: 100%
+}
+
+
+.login__pt{
+    padding-top: 150px;
+}
+
+
+.login-left{
+	text-align: center;
+	margin-top: 40px;
+	color: #fff;
+	padding: 30px;
+}
+
+.login-left h2{	letter-spacing: 2px; }
+
+.login-left p{
+	padding: 20px 20px 0;
+	font-size: 20px;
+}
+
+.login-left img{
+	margin-top: 5px;
+	margin-bottom: 28px;
+	width: 90px;
+	animation: arrow .8s infinite alternate;
+}
+
+.login-right{
+	border: none;
+	background: #f8f8f8;
+	border-top-left-radius: 20% 80%;
+	border-bottom-left-radius: 20% 80%;
+	padding: 50px;
+}
+
+.login-right h2{
+	text-align: center;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.login-form{
+	padding: 30px;
+}
+
+.login-right .btn-primary{
+	float: right;
+	border-radius: 1.5rem;
+	border: none;
+	width: 120px;
+	background: #ff4b28;
+	color: #fff;
+	font-weight: 600;
+	margin-top: 20px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.login-right .btn-primary:hover{
+	background: #111f4d;
+}
+
+@keyframes arrow{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(30px);}
+}

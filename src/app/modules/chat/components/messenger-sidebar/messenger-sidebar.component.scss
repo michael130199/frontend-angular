@@ -1,0 +1,139 @@
+@import "../../../../../assets/sass/variables";
+
+
+$mind-messenger-sidebar--bg-color: #dfe3e8;
+$mind-messenger-main-bg-color: #ebeef0;
+
+.icon-button {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: #cdd4dc;
+  }
+}
+.right-arrow-icon {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #d1d1d6;
+  border-right: 2px solid #d1d1d6;
+  transform: rotate(45deg);
+}
+
+.add-icon {
+  position: relative;
+  top: -1px;
+  width: 22px;
+  height: 22px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 10px;
+    content: '';
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: #00a7c9;
+    border-radius: 2px;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+.member-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-right: 2px solid transparent;
+  padding: 8px 16px;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+  }
+}
+.member-card--isActive {
+  border-right: 2px solid #7e939e;
+  background-color: white;
+}
+.member-card__meta {
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  color: #7b7b82;
+}
+
+.member-card__media {
+  display: flex;
+  width: 100%;
+  color: blue;
+}
+.messenger__body {
+  border-top-right-radius: var($mind-border-radius--default);
+  max-width: 481px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.messenger__sidebar {
+  width: 280px;
+  background-color: var($mind-messenger-sidebar--bg-color);
+  border-top-left-radius: var($mind-border-radius--default);
+}
+
+.sidebar__header {
+  padding: 8px 8px 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+}
+
+.sidebar__sub-header {
+  height: 30px;
+  font-size: 12px;
+  padding: 0 8px 0 12px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  background-color: var($mind-messenger-sidebar--bg-color);
+}
+
+.media__name {
+  font-size: 16px;
+}
+
+.media__convers-prev {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.media__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+}
+
+.media__actions {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
