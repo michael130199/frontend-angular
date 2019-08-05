@@ -67,11 +67,7 @@
 
         <ul class="navbar-nav ml-auto text-right"> 
           
-          <button class="navbar__profile" 
-          id="dropdownMenu2" 
-          data-toggle="dropdown" 
-          aria-haspopup="true" 
-          aria-expanded="false">
+          <a class="navbar__profile">
 
             <div class="navbar__profile-radius">l</div>
             
@@ -79,13 +75,25 @@
 
             <img src="../../../assets/img/users.png" class="navbar__profile-img">
 
-          </button>
-          <div class="dropdown-menu align-center" aria-labelledby="dropdownMenu2">
-            <span class="dropdown-item-text">Opciones</span>
-            <a class="dropdown-item">Perfil</a>
-            <a class="dropdown-item">Manuales de Uso</a>
-            <a class="dropdown-item">Cerrar Sesion</a>
-          </div>
+            <div class="navbar__dropdown dropdown-menu">
+              
+              <span class="dropdown-item-text">Opciones</span>
+              
+              <hr>
+
+              <a class="dropdown-item">Perfil</a>
+              
+              <a class="dropdown-item">Manuales de Uso</a>
+            
+              <hr>
+              
+              <a class="dropdown-item">Cerrar Sesion</a>
+            
+            </div>
+          
+          </a>
+          
+          
           
         </ul>
 

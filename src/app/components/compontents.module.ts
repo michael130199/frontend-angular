@@ -14,7 +14,7 @@ import { SlideServiceComponent } from './slide-service/slide-service.component';
   declarations: [ 
     CardNewsComponent, 
     ContentNewsComponent, 
-    ListComponent, ChatComponent, 
+    ListComponent,
     NavbarComponent, 
     SlideServiceComponent ],
   exports: [ 

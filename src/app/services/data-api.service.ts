@@ -25,7 +25,7 @@ export class DataApiService {
     title: "", //titulo
     content: null,//contenido
     resume: "",// resumen
-    publication:"",//Fecha de Publicacion
+    publication_date:"",//Fecha de Publicacion
     tag: "",
     file: null,
     author: "", 

@@ -65,14 +65,48 @@ li.nav-item>a.nav-link{
 }
 
 .navbar__profile{
+    position: relative;
+    display: inline-block;
     box-sizing: border-box;
     background-color: transparent;
     color: #fff;
     border: 0px solid transparent;
+
+    .navbar__dropdown{
+        display: none;
+        top: 100%;
+        
+        right: 0%;
+        background:  linear-gradient(to bottom,  #313131, #636363);
+        color: #fff;
+        border: 1px #313131 solid;
+
+        hr{
+            margin: 8px 20px;
+        }
+        
+        .dropdown-item-text{
+            background: #636363;
+            color: #fff;
+        }
+
+        .dropdown-item:hover{
+            background: #0ba2b7;
+            color: #fff
+        }
+    }
+    
+
 }
 
+.navbar__profile:hover .navbar__dropdown{
+    display: block;
+}
+
+
+
 .navbar__profile-radius{
-    height: 100%;
+   
     width: 5px;
     
     display: inline-block;
@@ -89,7 +123,6 @@ li.nav-item>a.nav-link{
 .navbar__profile-title{
     display: inline-block;
     background-color: #1cb3c8;
-    height: 100%;
     padding: 5px 20px 5px 10px;
 }
 
