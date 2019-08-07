@@ -36,6 +36,10 @@ const routes: Routes = [
     loadChildren: './modules/chat/chat.module#ChatModule'
   },
   {
+    path: 'profile',
+    loadChildren: './modules/profile/profile.module#ProfileModule'
+  },
+  {
     path:'**',
     component: ListComponent
   }

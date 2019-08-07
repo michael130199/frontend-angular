@@ -1,0 +1,130 @@
+//colors ejemplos
+$mind-color--red: #cc0000;
+$mind-color--material-red: #d50000;
+$mind-color--material-red-alpha: #f2dede;
+$mind-color--white: #ffffff;
+$mind-color--black: #000000;
+$mind-color--blue: #009aba;
+$mind-color--cobalt: #4a90e2;
+$mind-color--light-blue: #ecf3fc;
+$mind-color--green: #00b200;
+$mind-color--light-green: #e2f9cb;
+$mind-color--focus-blue: #4f82de;
+$mind-color--focus-blue-light: #d2e2ff;
+$mind-color--disabled-gray: #eceeef;
+$mind-color--orange: #f60;
+$mind-color--light-orange: rgba(255, 102, 0, 0.07);
+$mind-color--pink: #eb1288;
+$mind-color--input-gray: #bdbdbd;
+$mind-color--light-gray: #f2f2f2;
+$mind-color--gray: #e4e7ea;
+$mind-color--dark-gray: #667983;
+$mind-color--darker-gray: #565656;
+$mind-color--border-gray: #e0e0e0;
+$mind-color--border-brown: #faebcc;
+$mind-color--shadow-gray: rgba(0, 0, 0, 0.12);
+$mind-color--brown: #66512c;
+$mind-color--light-brown: #faebcc;
+$mind-color--blue-green: #3f6172;
+$mind-color--warning-yellow: #ffdb6f;
+$mind-color--dark-yellow: #ff9800;
+$mind-color--dark-blue: #5a94e0;
+$mind-color--main-blue: #80cbd5;
+$mind-color--main-grey: #32404f;
+$mind-color--main-darkblue: #31548c;
+$mind-color--main-lightblack: #434646;
+
+$mind-color--warning: #ef8f6f;
+$mind-color--primary-blue: #00a6c8;
+$mind-color--primary-text: $mind-color--main-lightblack;
+
+$mind-btn-primarycolor: #67c076;
+
+$program-status-pending-color: #96a4ad;
+$program-status-active-color: #6ec2d4;
+$program-status-completed-color: #67c076;
+$program-status-rejected-color: $mind-color--warning;
+
+$mind-banner-bg: $mind-color--white;
+$mind-body-bg: #f2f3f3;
+
+$mind-menu-buttons--hover-color: $mind-color--light-gray;
+
+//font-family ejemplos
+$mind-font-family--default: "Poppins", sans-serif;
+$mind-font-family--roboto: "Poppins", Roboto, sans-serif;
+
+//font-sizes ejemplos
+$mind-font-size--default: 14px;
+$mind-font-size--large: 16px;
+$mind-font-size--larger: 20px;
+$mind-font-size--small: 12px;
+$mind-font-size--xsmall: 10px;
+
+$mind-banner-font-lg: 24px;
+$mind-pageheading-font-size: $mind-font-size--larger;
+$mind-pageinfoheading-font-size: $mind-font-size--large;
+$mind-tablecontent-font-size: $mind-font-size--large;
+$mind-tableheading-font-size: $mind-font-size--large;
+
+//font-weights ejemplos 
+$mind-font-weight--heavier: 500; //600 font weight does not render correctly
+$mind-font-weight--medium: 500; //600 font weight does not render correctly
+$mind-font-weight--heavy: 300; //600 font weight does not render correctly
+$mind-font-weight--light: 300; //600 font weight does not render correctly
+
+//common variables
+$mind-default-spacing: (24/16); // 24px in rem
+
+//paddings
+$mind-padding--default: 10px;
+
+//margins
+$mind-margin--default: 8px;
+
+//borders
+$mind-border--default: 1px solid $mind-color--border-gray;
+
+//borders radius
+$mind-border-radius--default: 0.25rem;
+$mind-border-radius--minor: 2px;
+$mind-border-radius--hemi: 30px;
+
+//logo size
+$mind-logo-height--small: 50px;
+
+//box shadows
+$mind-box-shadow--default: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+$mind-box-shadow--light--default: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+$mind-box-shadow--light--active: 0 0 5px 0 $mind-color--focus-blue;
+$mind-box-shadow--light--hover: 0 4px 8px rgba(0, 0, 0, 0.25),
+  0 1px 1px rgba(0, 0, 0, 0.22);
+$mind-box-shadow--light--error: 0 0 7px 0 $mind-color--material-red-alpha;
+
+//checkbox
+$mind-checkbox-width--default: 26px;
+$mind-checkbox-height--default: 22px;
+
+//transitions
+$mind-transition--default: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+//buttons
+$mind-button-width: #{(139/16)}rem;
+$mind-button-bg-color--disabled: rgba(209, 218, 218, 0.4);
+$mind-button-color--disabled: #70838d;
+
+//dialog
+$mind-dialog-spacing: 8px;
+
+//breakpoints
+$mind-breakpoint-lg: #{(1198/16)}rem;
+$mind-breakpoint-sm: #{(768/16)}rem;
+
+
+
+//Colors
+$app-primary-1: #1cb3c8;
+$app-primary-2: #0ba2b7;
+$app-gray-1: #636363;
+$app-gray-2: #313131;
+$app-white-1: #ffffff;

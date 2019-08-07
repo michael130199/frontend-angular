@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  name = "Michael";
+  last_name =  "Urbina";
+
+  position = "";
+  alias = "Desarrollador";
+
+
+
   constructor() { }
 
   ngOnInit() {
