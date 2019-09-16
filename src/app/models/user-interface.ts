@@ -1,18 +1,15 @@
 export interface UserInterface {
     id?:string;
-    rol?:    {},
+    role_id?: number,
     name?: string,
     last_name?: string,
     ci?: number,
-    tlf_emer?: string,
-    extention?: string,
+    emergency_tl?: number,
+    extention?: number,
     email?: string,
     biography?: string,
     remember_token?: string,
-    Created_at?: Date,
-    Update_at?: Date,
-    realm?: string,
-    username?: string,
-    emailVerified?: true,
-    password?: string
+    password?: string,
+    created_at?: Date,
+    update_at?: Date
   }

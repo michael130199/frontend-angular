@@ -5,9 +5,8 @@
 /*Jumbotron */
 .jumbotron {
   padding-top: 70px;
-  height: 420px;
   background: transparent;
-  background: url("https://images.unsplash.com/photo-1444090542259-0af8fa96557e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b263b22ca6e84d3d50bd86717beaa629") no-repeat center center fixed;
+  background: url("/assets/img/fondo-3.jpeg") no-repeat center center fixed;
   margin-bottom: 0;
 }
 
@@ -22,7 +21,6 @@
 /*about section*/
 
 section.about {
-  height: 420px;
   background-color: #aaa;
 }
 
@@ -30,7 +28,8 @@ section.about ul li {
   list-style: none;
   
 }
-section.about img {
+
+img.profile__img {
   padding-top: 30px;
   border-radius: 50%;
 }

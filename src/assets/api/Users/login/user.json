@@ -1,0 +1,22 @@
+{
+    "token": "10r8yf7cud187cuh374f2t3c6qo3",
+    "id": 1,
+    "rol": { 
+        "id": 1,
+        "name": "admin",
+        "descrip": "tiene todas las opciones Habilitadas",
+        "Created_at": "2019-07-08 13:00:59",
+        "Updated_at": "2019-07-08 13:00:59"
+    },
+    "name": "Michael",
+    "last_name": "Urbina",
+    "ci": 27427601,
+    "tlf_emer": "04264186858",
+    "extention": "7079",
+    "email": "root@meunet.gob.ve",
+    "biography": "Algo que Decir",
+    "remember_token": "123456",
+    "password": "123456",
+    "Created_at": "2019-07-08",
+    "Update_at": "2019-07-08"
+}

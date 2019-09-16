@@ -1,13 +1,23 @@
-<div class="messenger messenger__container">
+<div class="messenger">
+
 	<div class="messenger__header"></div>
+	
 	<div class="messenger__body">
+
 		<ng-container *ngIf="messages?.length">
+
 			<ng-container *ngFor="let msg of messages; let i = index">
+
 				<app-message [message]="msg" [isLast]="messages.length-1 === i"></app-message>
+
 			</ng-container>
+
 		</ng-container>
+
 	</div>
+
 	<div class="messenger__footer">
+
 		<textarea 
 			#textarea
 			placeholder="Write a message..."
@@ -15,6 +25,9 @@
 			(keydown)="onChangeMessage($event)"
 			(drop)="textareaResize()"
 			class="form-control messenger__input">
+
 		</textarea>
+		
   </div>
+  
 </div>

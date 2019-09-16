@@ -1,22 +1,14 @@
 export interface NewsInterface {
     id?: number;
-
+    user_id?: number;
+    file_id?:number;
     title?: string; //titulo
-
-    content?:any;//contenido
-
+    content?: string;//contenido
     resume?: string;// resumen
-    
     slug?: string;
-    
-    publication_date?:string;//Fecha de Publicacion
-
-    status?:any;
-    
-    tag?: string;
-
-    file?:any;
-    
-    author?: string; 
-
+    status?: string;
+    publication_date?:Date;//Fecha de Publicacion
+    created_at?: Date;
+    updated_at?: Date;
+    deleted_at?: Date;
 }

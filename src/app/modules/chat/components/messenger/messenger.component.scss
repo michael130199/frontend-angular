@@ -1,4 +1,4 @@
-@import "../../../../../assets/sass/variables";
+@import "../../../../../assets/sass/_variables";
 
 .messenger {
     display: flex;
@@ -6,7 +6,7 @@
     min-height: 100%;
     border: 1px solid #ebeef0;
     border-radius: 4px;
-    width: 481px;
+    width: 100%;
 }
 .messenger__body {
     flex: 1 0 auto;

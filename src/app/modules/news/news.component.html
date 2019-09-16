@@ -1,13 +1,16 @@
 <app-navbar></app-navbar>
 
-<main class="container-fluid"> 
-    <h2>{{title}}</h2>
+<main>
+    <div class="text-center pb-5">
+        <h2>{{title}}</h2>
 
-            <a [routerLink]="['/news/agregar']"> News </a>
-        
-            <a [routerLink]="['/news/modificar']"> Modificar</a>
-   
-            <a [routerLink]="['/news/list']"> Lista</a>
+        <a [routerLink]="['/news/agregar']"> News </a>
+    
+        <a [routerLink]="['/news/modificar']"> Modificar</a>
+
+        <a [routerLink]="['/news/list']"> Lista</a>
+    </div>
+    
 
 
     

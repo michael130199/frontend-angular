@@ -13,23 +13,29 @@ export class DataApiService {
 
   constructor(private http: HttpClient,  private authService: AuthService) { }
 
-// Para AuthService
+  // Para AuthService
   // headers: HttpHeaders = new HttpHeaders({
   //   "Content-Type": "application/json"
   // });
   news:  Observable<any>;
   anews: Observable<any>;
+
+  contact:  Observable<any>;
+  contacts: Observable<any>;
   
   public selectedNews: NewsInterface = {
     id: null,
-    title: "", //titulo
-    content: null,//contenido
-    resume: "",// resumen
-    publication_date:"",//Fecha de Publicacion
-    tag: "",
-    file: null,
-    author: "", 
-    status: null,
+    user_id: null,
+    file_id: null,
+    title: "",
+    content: "",
+    resume: "",
+    slug: "",
+    status: "",
+    publication_date: null,
+    created_at: null,
+    updated_at: null,
+    deleted_at: null
   };
 
   headers: HttpHeaders = new HttpHeaders({
@@ -37,6 +43,11 @@ export class DataApiService {
     Authorization: this.authService.getToken()
   });
 
+
+
+
+
+  /** ------------------------- Modulo De Noticias---------------------- */
   getAllNews() {
     const url_api = "http://localhost:3000/api/news";
     return this.http.get(url_api);
@@ -76,6 +87,24 @@ export class DataApiService {
     const url_api = `http://localhost:3000/api/news`;
     return this.http.delete(url_api, {headers: this.headers}).pipe(map(data => data));
   }
+
+  /** -------------------------fin Modulo De Noticias---------------------- */
+
+
+  /** ------------------------- Modulo De contactos---------------------- */
+  getAllContact(user_id) {
+    const url_api = "http://localhost:3000/api/user/{"+user_id+"}/contacts";
+    return this.http.get(url_api);
+  }
+
+  postContact(user_id, contact) {
+    const url_api = "http://localhost:3000/api/user/{"+user_id+"}/contacts";
+    return this.http.post(url_api, contact, {headers: this.headers}).pipe(map(data=> data));
+  }
+
+
+  /** ------------------------- fin Modulo De contactos---------------------- */
+
 
 
 

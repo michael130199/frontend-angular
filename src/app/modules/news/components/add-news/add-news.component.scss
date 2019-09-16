@@ -1,0 +1,32 @@
+@import "../../../../../assets/variables.scss";
+
+
+
+.add-news__module{
+    width:100%;
+    display: flex;
+    position: relative;
+    color: $app-white-1;
+}
+
+.section__background{
+    background: linear-gradient(to right, $app-primary-5,  $app-primary-1);
+    padding: 20px 5%;
+    margin: 0%;
+}
+
+.section__right-triangle {
+    width: 26%;
+    clip-path: polygon(0 0,0 100%, 100% 50%);
+    background-color: $app-primary-1;
+    margin: 0%;
+}
+
+.btn-app-primary{
+    background: $app-gray-3;
+    color: $app-white-1;
+}
+.btn-app-primary:hover{
+    background: $app-gray-1;
+    color: $app-white-1;
+}

@@ -1,42 +1,68 @@
 <div class="messenger__sidebar sidebar h-100">
+
 	<div class="sidebar__header">
+
 		<div class="d-flex align-items-center">
-			<button
-        class="icon-button mr-2 toggle-sidebar"
-        type="button"
-      >
+
+      <button class="icon-button mr-2 toggle-sidebar"
+        type="button">
+
       </button>
+
       <h1 class="h6 mb-0 sidebar-title">Chat Inbox</h1>
+
     </div>
+
     <span class="sidebar__actions">
+
       <button class="icon-button" type="button" (click)="onClickNewChat()">
+
         <div class="add-icon"></div>
+
       </button>
+
     </span>
+
   </div>
+
   <div class="sidebar__content">
+
     <div class="sidebar__member-card member-card">
+
       <div class="media align-items-center">
+
         <app-avatar
           class="mr-2"
           size="large"
           isOnline="true"
-          name="Joe Se"
-        >
+          name="Joe Se">
+        
         </app-avatar>
+        
         <div class="media-body">
+
           <div class="media__name"></div>
+
             <div class="media__convers-prev">
               asdf
             </div>
+
             <div class="member-card__meta">
               4:50pm
             </div>
+
         </div>
+        
         <div class="media__actions">
+          
           <div class="right-arrow-icon"></div>
+        
         </div>
+      
       </div>
+    
     </div>
+  
   </div>
+
 </div>

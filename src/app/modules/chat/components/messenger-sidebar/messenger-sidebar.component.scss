@@ -1,4 +1,4 @@
-@import "../../../../../assets/sass/variables";
+@import "../../../../../assets/sass/_variables";
 
 
 $mind-messenger-sidebar--bg-color: #dfe3e8;
@@ -87,7 +87,7 @@ $mind-messenger-main-bg-color: #ebeef0;
   overflow: hidden;
 }
 .messenger__sidebar {
-  width: 280px;
+  width: 100%;
   background-color: var($mind-messenger-sidebar--bg-color);
   border-top-left-radius: var($mind-border-radius--default);
 }

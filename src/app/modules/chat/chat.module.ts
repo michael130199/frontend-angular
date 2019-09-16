@@ -1,4 +1,3 @@
-import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -10,9 +9,6 @@ import { AvatarComponent } from "./components/avatar/avatar.component";
 import { MessengerComponent } from "./components/messenger/messenger.component";
 import { MessageComponent } from "./components/message/message.component";
 import { MessengerSidebarComponent } from "./components/messenger-sidebar/messenger-sidebar.component";
-
-
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 const routes: Routes = [
@@ -37,8 +33,6 @@ const routes: Routes = [
     RouterModule
   ],
   imports: [
-    BrowserModule, 
-    BrowserAnimationsModule,
     CommonModule,
     RouterModule.forChild(routes),
     ComponentsModule],
